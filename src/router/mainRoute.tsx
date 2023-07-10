@@ -1,5 +1,5 @@
 import {createBrowserRouter} from "react-router-dom"
-import LandingPage from "../pages/LandingPage"
+import HomeScreen from "../pages/HomeScreen"
 import SortPage from "../pages/SortPage"
 import Error2 from "../pages/ErrorPage/Error"
 
@@ -7,7 +7,7 @@ import Error2 from "../pages/ErrorPage/Error"
 export const mainRoute = createBrowserRouter([
     {
         path:"/",
-        element:<LandingPage/>
+        element:<HomeScreen/>
     },
     {
         path:"/sort",
