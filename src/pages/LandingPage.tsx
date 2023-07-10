@@ -1,7 +1,7 @@
 
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <div>Neche you are to work on this page </div>
   )
 }
 
