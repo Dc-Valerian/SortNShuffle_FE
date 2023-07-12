@@ -1,8 +1,12 @@
+import { LittleDescription, TitlePage } from ".";
 
 const LandingPage = () => {
   return (
-    <div>Neche you are to work on this page </div>
-  )
-}
+    <div>
+      <TitlePage />
+      <LittleDescription />
+    </div>
+  );
+};
 
-export default LandingPage
+export default LandingPage;
