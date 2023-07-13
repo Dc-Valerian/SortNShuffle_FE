@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import { FiMail } from "react-icons/fi"
+
 
 const SortPage = () => {
   return (
@@ -7,11 +9,17 @@ const SortPage = () => {
         <Head>
           Shuffle Your Groups Here
         </Head>
+
        <Main>
        <Box>
           <textarea name="" id=""   placeholder="Enter the List You Want to be Shuffled"></textarea>
        <div>
-       <Input>  <input type="text" /> <div>Yes</div></Input>
+       <InputHolder>
+                                <Input
+                                    placeholder="Your User Name"
+                                />
+                                <IconMail />
+                            </InputHolder>
         <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, error.
         </Text>
@@ -26,15 +34,68 @@ const SortPage = () => {
 
 export default SortPage
 
-const Input = styled.div`
-display: flex;
+const IconMail = styled(FiMail)`
+margin-right: 5px;
+font-size: 30px;
+color: rgba(0,0,0,0.4);
+height: 100%;
 
-div{
-  background-color: yellow;
+:hover{
+  color: green;
+  cursor:pointer;
 }
+
 `
 
-const Text = styled.div``
+const Input = styled.input`
+outline: none;
+border: none;
+flex: 1;
+border: 0;
+padding-left: 10px;
+height: 100%;
+width: 100%;
+background-color: brown;
+`
+const InputHolder = styled.div`
+width: 100%;
+height: 35px;
+border: 1px solid silver;
+border-radius: 5px;
+display:flex;
+align-items:center;
+background-color: yellow;
+`
+
+
+// const Input = styled.div`
+// display: flex;
+// align-items: center;
+// /* justify-content: center; */
+// div{
+//   background-color: yellow;
+//   margin:0;
+//   height: 25px;
+//   width: 40px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// input{
+//   background-color: whitesmoke;
+//   width: 150px;
+//   height: 25px;
+//   outline: none;
+//   border: none;
+// }
+// `
+
+const Text = styled.div`
+background-color:purple;
+width:230px ;
+`
+
 
 const But = styled.div`
 width: 40px;
@@ -48,11 +109,12 @@ margin:0;
 
 const Box = styled.div`
 background-color: red;
-width: 100%;
-height: 200px;
+width: 90%;
+height: 250px;
 display: flex;
 align-items: center;
 justify-content: center;
+flex-wrap: wrap;
 /* flex-direction: column; */
 
 div{
@@ -82,7 +144,6 @@ justify-content: center;
 
 const Head = styled.div`
   background-color: grey;
-  width: 100%;
   height: 70px;
   display: flex;
   align-items: center;
@@ -93,7 +154,5 @@ const Head = styled.div`
 const Container = styled.div`
   background-color: #0c1014;
   height: 100vh;
-  width: 100vw;
-  /* color: white; */
-  overflow: hidden;
+  width: 100%;
 `
