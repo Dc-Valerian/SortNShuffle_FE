@@ -42,6 +42,11 @@ const ButtonWrap = styled.div`
   color: white;
   font-size: 20px;
   transition: all 500ms;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+
   @media screen and (max-width: 500px) {
     padding: 13px 20px;
     font-size: 15px;
