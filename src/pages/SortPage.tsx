@@ -1,8 +1,5 @@
-
 const SortPage = () => {
-  return (
-    <div>SortPage</div>
-  )
-}
+  return <div></div>;
+};
 
-export default SortPage
+export default SortPage;

@@ -33,3 +33,9 @@
   border: 4px solid transparent;
   background-clip: content-box;
 }
+
+body{
+font-family: 'Karla', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+}
